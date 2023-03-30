@@ -1,0 +1,11 @@
+# un programa que solicite tres números enteros desde teclado al usuario
+numeros = input("Ingrese tres números enteros separados por espacios: ")
+numeros_lista = numeros.split()
+
+numeros_enteros = [int(num) for num in numeros_lista]
+maximo = max(numeros_enteros)
+print("El número", maximo, "es el número más grande de los tres")
+minimo = min(numeros_enteros)
+print("El número", minimo, "es el número más pequeño de los tres")
+medio = sum(numeros_enteros) - maximo - minimo
+print("El número", medio, "es el número de en medio de los tres")
